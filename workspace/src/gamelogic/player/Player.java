@@ -19,8 +19,8 @@ public class Player extends PhysicsObject{
 	public Player(float x, float y, Level level) {
 	
 		super(x, y, level.getLevelData().getTileSize(), level.getLevelData().getTileSize(), level);
-		int offset =(int)(level.getLevelData().getTileSize()*0.1); //hitbox is offset by 10% of the player size.
-		this.hitbox = new RectHitbox(this, offset,offset, width -offset, height - offset);
+		int offset =(int)(level.getLevelData().getTileSize() * 0.1); //hitbox is offset by 10% of the player size. =========================================
+		this.hitbox = new RectHitbox(this, offset, offset, width - offset, height - offset);
 	}
 
 	@Override
